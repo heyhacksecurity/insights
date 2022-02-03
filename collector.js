@@ -10,7 +10,7 @@ if(heyhackdatainsight == null) {
 
 if(Math.floor(Math.random() * 10)%10==0) {
   var xhr = new XMLHttpRequest();
-	xhr.open("GET", "https://insight.heyhack.com/collect?data=" + sessionStorage.getItem("HeyHackInsightsData"), true);
+	xhr.open("GET", "https://insights.heyhack.com/col?d=" + sessionStorage.getItem("HeyHackInsightsData"), true);
 	xhr.send();
 	sessionStorage.removeItem('HeyHackInsightsData');
 }
